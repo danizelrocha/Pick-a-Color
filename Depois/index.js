@@ -1,15 +1,15 @@
 
 
-const colors = ['green', 'grey', 'black','yellow', 'purple', 'blue', 'red']
+const cores = ['green', 'grey', 'black','yellow', 'purple', 'blue', 'red']
 const botao = document.getElementById('botao')
-const color = document.querySelector('.color')
+const cor = document.querySelector('.color')
 
 botao.addEventListener('click', function() {
-    const randomColor = getRandomColor()
-    document.body.style.background = colors[randomColor]
-    color.textContent = colors[randomColor]
+    const randomCor = getRandomCor()
+    document.body.style.background = cores[randomCor]
+    cor.textContent = cores[randomCor]
 })
 
-function getRandomColor() {
-    return Math.floor(Math.random() * colors.length)
+function getRandomCor() {
+    return Math.floor(Math.random() * cores.length)
 }
